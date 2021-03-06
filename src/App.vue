@@ -1,26 +1,57 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <the-container>
+        <keep-alive>
+            <component :is="selectedComponent"></component>
+        </keep-alive>
+    </the-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheContainer from './components/base/BaseContainer.vue';
+import TheSettings from './components/pages/TheSettings.vue';
+import TheGame from './components/pages/TheGame.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    components: {
+        TheContainer,
+        TheSettings,
+        TheGame,
+    },
+    data() {
+        return {
+            selectedComponent: 'the-settings',
+        };
+    },
+    provide() {
+        return {
+            setComponent: this.activateComponent,
+        };
+    },
+    methods: {
+        activateComponent(comp){
+            this.selectedComponent = comp;
+        },
+    },
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "@/assets/sass/typography.scss";
+@import "@/assets/sass/reset.scss";
+
+body {
+    min-height: 100vh;
+    background-color: $blue-dark;
+    color: $white;
+    font-family: 'Play', sans-serif;
+    font-size: calcRem(15px);
+
+    @include tablet {
+      font-size: calcRem(18px);
+    }
+
+    @include desktop {
+      font-size: calcRem(20px);
+    }
 }
 </style>
