@@ -1,25 +1,8 @@
-# rock-paper-scissors
+# Rock Paper Scissors Lizard Spock
+This is an **application**, check here for the [demo](https://aldopolojr-rock-paper-scissors.netlify.app/)
 
-## Project setup
-```
-npm install
-```
+## Notes
+- …
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# rock-paper-scissors
+## Tags
+#VUE #VUEX
