@@ -46,7 +46,7 @@ export default {
     input {
         display: block;
         margin: calcRem(10px) 0 0;
-        padding: calcRem(10px) calcRem(20px);
+        padding: calcRem(15px) calcRem(20px);
         width: 100%;
         background: $blue-light;
         color: $grey1;

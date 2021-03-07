@@ -17,4 +17,10 @@ export default {
     startGame(context) {
         context.commit('startGame');
     },
+    updateCommentary(context, payload) {
+        context.commit('updateCommentary', payload);
+    },
+    updateCommentaryResult(context, payload) {
+        context.commit('updateCommentaryResult', payload);
+    },
 };
