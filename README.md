@@ -1,8 +1,5 @@
 # Rock Paper Scissors Lizard Spock
-This is an **application**, check here for the [demo](https://aldopolojr-rock-paper-scissors.netlify.app/)
+The classic [rock paper scissors](https://aldopolojr-rock-paper-scissors.netlify.app/) with a narrator. Available in single and multi-player.
 
-## Notes
-- …
-
-## Tags
-#VUE #VUEX
+## Category
+application
